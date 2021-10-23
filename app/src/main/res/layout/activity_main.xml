@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginBottom="32dp"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintBottom_toTopOf="@+id/header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <TextView
+            android:id="@+id/myEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Sadance"
+            android:textSize="30dp"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <Button
+        android:id="@+id/absent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:text="Absent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.731"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/percent2"
+        app:layout_constraintVertical_bias="0.146" />
+
+    <TextView
+        android:id="@+id/percent2"
+        android:layout_width="318dp"
+        android:layout_height="50dp"
+        android:text="In last class, I was"
+        android:textSize="25dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        app:layout_constraintVertical_bias="0.709" />
+
+    <TextView
+        android:id="@+id/percent"
+        android:layout_width="239dp"
+        android:layout_height="34dp"
+        android:gravity="center"
+        android:text="Percentsge:"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        app:layout_constraintVertical_bias="0.351" />
+
+    <TextView
+        android:id="@+id/present_days"
+        android:layout_width="239dp"
+        android:layout_height="34dp"
+        android:gravity="center"
+        android:text="Present days:"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        app:layout_constraintVertical_bias="0.252" />
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="161dp"
+        android:layout_height="51dp"
+        android:gravity="center"
+        android:text="STATUS"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <TextView
+        android:id="@+id/total_days"
+        android:layout_width="239dp"
+        android:layout_height="34dp"
+        android:gravity="center"
+        android:text="Total days:"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        app:layout_constraintVertical_bias="0.155" />
+
+    <Button
+        android:id="@+id/present"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:text="Present"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.276"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/percent2"
+        app:layout_constraintVertical_bias="0.146" />
+
+    <TextView
+        android:id="@+id/leftOverDays"
+        android:layout_width="414dp"
+        android:layout_height="63dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/percent2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/percent"
+        app:layout_constraintVertical_bias="0.603" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

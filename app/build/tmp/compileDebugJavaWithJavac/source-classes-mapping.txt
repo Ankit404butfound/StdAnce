@@ -1,0 +1,12 @@
+com/example/sadance/FirstFragment.java
+ com.example.sadance.FirstFragment
+ com.example.sadance.FirstFragment$1
+com/example/sadance/DBHandler.java
+ com.example.sadance.DBHandler
+com/example/sadance/BuildConfig.java
+ com.example.sadance.BuildConfig
+com/example/sadance/SecondFragment.java
+ com.example.sadance.SecondFragment
+ com.example.sadance.SecondFragment$1
+com/example/sadance/MainActivity.java
+ com.example.sadance.MainActivity
